@@ -1,10 +1,10 @@
 ## 🎯 CP4 2025 - 2º SEMESTRE - "TanQuery"
 
-**Integrantes do CP:**  
+**Integrantes do CP4:**  
    - **Paulo André Carminati RM557881 - 2TDSPZ**  
 
 
-**Repositório no GitHub:** [CP1 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
+**Repositório no GitHub:** [CP4 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
 
 # Atividade 01 - TanStack Query no React Native
 
