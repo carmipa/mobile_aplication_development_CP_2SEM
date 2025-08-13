@@ -4,9 +4,10 @@ import { View, Text, StyleSheet, SafeAreaView, ScrollView, Image } from 'react-n
 import { Feather } from '@expo/vector-icons';
 
 const projectDetails = [
-    { icon: 'book-open', label: 'CURSO',      value: 'Tecnologia em Desenvolvimento de Sistemas - 2TDS-2025' },
-    { icon: 'user',      label: 'PROFESSOR',  value: 'Fernando Pinéo' },
-    { icon: 'package',   label: 'COMPONENTE', value: 'Mobile Application Development' },
+    { icon: 'book-open', label: 'CURSO',      value: 'Tecnologia em Desenvolvimento de Sistemas' },
+    { icon: 'users', label: 'TURMA',      value: '2-TDSPZ - 2º Semestre - FIAP-2025' },
+    { icon: 'user',      label: 'PROFESSOR',  value: 'Fernando Pinéo de Abreu' },
+    { icon: 'package',   label: 'MATÉRIA', value: 'Mobile Application Development' },
 ];
 
 const COLORS = {

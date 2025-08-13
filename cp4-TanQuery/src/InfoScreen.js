@@ -32,9 +32,9 @@ export default function InfoScreen() {
                         <Text style={styles.mainTitle}>Sobre o Projeto</Text>
                     </View>
                     <View style={styles.section}>
-                        <Text style={styles.sectionTitle}>Projeto</Text>
+                        <Text style={styles.sectionTitle}>Repositório</Text>
                         <Text style={styles.projectTitle}>CP4 - Consumo de API com TanQuery</Text>
-                        <Text style={styles.text}>Aplicativo que consome a API JSONPlaceholder para listar usuários, utilizando TanStack Query para gerenciar o estado do servidor.</Text>
+
                         <TouchableOpacity style={styles.linkButton} onPress={() => handleLinkPress(projectRepoUrl)}>
                             <Feather name="github" size={18} color={styles.linkColor} style={{ marginRight: 5 }} />
                             <Text style={styles.linkText}>Ver Repositório do Projeto</Text>
