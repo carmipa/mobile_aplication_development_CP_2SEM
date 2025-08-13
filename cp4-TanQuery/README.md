@@ -4,7 +4,7 @@
    - **Paulo André Carminati RM557881 - 2TDSPZ**  
 
 
-**Repositório no GitHub:** [CP1 Mobile](https://github.com/carmipa/CP2025_primeiro_semestre/tree/main/mobile_aplication_development/cp_rm557881-Paulo)
+**Repositório no GitHub:** [CP1 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
 
 # Atividade 01 - TanStack Query no React Native
 
