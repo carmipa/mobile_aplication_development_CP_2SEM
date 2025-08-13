@@ -29,10 +29,14 @@ export default function UserListItem({ user, isExpanded, onPress }) {
 
             {isExpanded && (
                 <View style={styles.details}>
+                    <InfoDetail icon="user" label="Username" value={user.username} />
                     <InfoDetail icon="map-pin" label="Cidade" value={user.address.city} />
+                    <InfoDetail icon="home" label="Endereço" value={`${user.address.street}, ${user.address.suite}`} />
                     <InfoDetail icon="phone" label="Telefone" value={user.phone} />
                     <InfoDetail icon="globe" label="Website" value={user.website} />
                     <InfoDetail icon="briefcase" label="Empresa" value={user.company.name} />
+                    <InfoDetail icon="info" label="Slogan" value={user.company.catchPhrase} />
+                    <InfoDetail icon="book" label="Serviços" value={user.company.bs} />
                 </View>
             )}
         </View>
