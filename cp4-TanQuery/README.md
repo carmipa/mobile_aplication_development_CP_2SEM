@@ -1,9 +1,15 @@
-## 🎯 CP4 2025 - 2º SEMESTRE - "TanQuery"
+## 🎯 CP4 2025 - 2º SEMESTRE - "TanQuery" 2TDSPZ
 
 **Integrantes do CP4:**  
+<<<<<<< HEAD
    - **Paulo André Carminati RM557881** - 2TDSPZ
    - **Amanda Mesquita Cirino Da Silva** - RM559177 
    - **Journey Tiago Lopes Ferreira** - RM556071 
+=======
+   - **Amanda Mesquita Cirino Da Silva** - RM559177 
+   - **Journey Tiago Lopes Ferreira** - RM556071 
+   - **Paulo André Carminati** - RM557881
+>>>>>>> f9375ad170c2a6023ed4a7f53bfff3626651067d
 
   
 
