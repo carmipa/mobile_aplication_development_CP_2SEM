@@ -1,0 +1,10 @@
+{
+  "welcome": "Witamy",
+  "logout": "Wyloguj",
+  "deleteAccount": "Usuń konto",
+  "confirmDelete": "Czy na pewno chcesz usunąć konto?",
+  "cancel": "Anuluj",
+  "delete": "Usuń",
+  "login": "Zaloguj się",
+  "password": "Hasło"
+}

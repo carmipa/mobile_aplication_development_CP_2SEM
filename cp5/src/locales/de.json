@@ -1,0 +1,10 @@
+{
+  "welcome": "Willkommen",
+  "logout": "Abmelden",
+  "deleteAccount": "Konto löschen",
+  "confirmDelete": "Möchten Sie das Konto wirklich löschen?",
+  "cancel": "Abbrechen",
+  "delete": "Löschen",
+  "login": "Anmelden",
+  "password": "Passwort"
+}
