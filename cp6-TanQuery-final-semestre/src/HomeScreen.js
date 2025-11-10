@@ -119,7 +119,7 @@ export default function HomeScreen() {
                                 },
                             ]}
                         >
-                            <Text style={styles.mainTitle}>CP4: TanStack Query</Text>
+                            <Text style={styles.mainTitle}>CP6: TanStack Query animação e efeito de tranisção de tela</Text>
                             <Text style={styles.description}>
                                 Consumo de API de usuários com React Native
                             </Text>

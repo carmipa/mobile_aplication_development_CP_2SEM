@@ -1,4 +1,4 @@
-# 📱 CP4 - TanStack Query | React Native Mobile App
+# 📱 CP6 - TanStack Query - animação e transição entre paginas | React Native Mobile App
 
 <div align="center">
 
@@ -16,6 +16,15 @@
 
 </div>
 
+---
+
+**Integrantes do CP:**
+- **Amanda Mesquita Cirino Da Silva** - RM559177
+- **Journey Tiago Lopes Ferreira** - RM556071
+- **Paulo André Carminati** - RM557881
+- **Gabrielly Macedo** - RM558962
+
+**Repositório no GitHub:** [CP6 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp6-TanQuery-final-semestre)
 ---
 
 ## 📑 Índice de Navegação

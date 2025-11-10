@@ -12,7 +12,7 @@ const groupMembers = [
     { name: 'Paulo André Carminati', rm: 'RM557881', github: 'https://github.com/carmipa', photo: require('../assets/fotos/paulo.png') },
     { name: 'Gabielly Campos Macedo', rm: 'RM558962', github: 'https://github.com/gabimaced0/gabimaced0', photo: require('../assets/fotos/gabi.png') }
 ];
-const projectRepoUrl = 'https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery';
+const projectRepoUrl = 'https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp6-TanQuery-final-semestre';
 const presentationDate = '14 de agosto de 2025';
 
 export default function InfoScreen() {
@@ -112,7 +112,7 @@ export default function InfoScreen() {
                         }}
                     >
                         <Text style={styles.sectionTitle}>Repositório</Text>
-                        <Text style={styles.projectTitle}>CP4 - Consumo de API com TanQuery</Text>
+                        <Text style={styles.projectTitle}>CP6 - Consumo de API com TanQuery animação e efeito de transição de página</Text>
 
                         <LinkButton
                             style={styles.linkButton}
@@ -146,6 +146,7 @@ export default function InfoScreen() {
                                 sectionAnim={sectionAnim}
                                 isLast={index === groupMembers.length - 1}
                                 onPress={() => handleLinkPress(member.github)}
+                                styles={styles}
                             />
                         ))}
                     </AnimatedCard>
@@ -159,19 +160,38 @@ const AnimatedPressableBase = Animated.createAnimatedComponent(Pressable);
 
 function LinkButton({ children, onPress, style }) {
     const scale = React.useRef(new Animated.Value(1)).current;
+    const opacity = React.useRef(new Animated.Value(1)).current;
 
     const handlePressIn = () => {
-        Animated.spring(scale, {
-            toValue: 0.95,
-            useNativeDriver: true,
-        }).start();
+        Animated.parallel([
+            Animated.spring(scale, {
+                toValue: 0.92,
+                tension: 300,
+                friction: 8,
+                useNativeDriver: true,
+            }),
+            Animated.timing(opacity, {
+                toValue: 0.8,
+                duration: 100,
+                useNativeDriver: true,
+            }),
+        ]).start();
     };
 
     const handlePressOut = () => {
-        Animated.spring(scale, {
-            toValue: 1,
-            useNativeDriver: true,
-        }).start();
+        Animated.parallel([
+            Animated.spring(scale, {
+                toValue: 1,
+                tension: 300,
+                friction: 8,
+                useNativeDriver: true,
+            }),
+            Animated.timing(opacity, {
+                toValue: 1,
+                duration: 100,
+                useNativeDriver: true,
+            }),
+        ]).start();
     };
 
     return (
@@ -183,6 +203,7 @@ function LinkButton({ children, onPress, style }) {
                 style,
                 {
                     transform: [{ scale }],
+                    opacity: opacity,
                 },
             ]}
         >
@@ -193,20 +214,20 @@ function LinkButton({ children, onPress, style }) {
 
 function AnimatedCard({ children, style, cardStyle }) {
     const scale = React.useRef(new Animated.Value(1)).current;
-    const elevation = React.useRef(new Animated.Value(2)).current;
+    const opacity = React.useRef(new Animated.Value(1)).current;
 
     const handlePressIn = () => {
         Animated.parallel([
             Animated.spring(scale, {
-                toValue: 1.02,
+                toValue: 0.98,
                 tension: 300,
                 friction: 10,
                 useNativeDriver: true,
             }),
-            Animated.timing(elevation, {
-                toValue: 8,
-                duration: 200,
-                useNativeDriver: false,
+            Animated.timing(opacity, {
+                toValue: 0.9,
+                duration: 150,
+                useNativeDriver: true,
             }),
         ]).start();
     };
@@ -219,10 +240,10 @@ function AnimatedCard({ children, style, cardStyle }) {
                 friction: 10,
                 useNativeDriver: true,
             }),
-            Animated.timing(elevation, {
-                toValue: 2,
-                duration: 200,
-                useNativeDriver: false,
+            Animated.timing(opacity, {
+                toValue: 1,
+                duration: 150,
+                useNativeDriver: true,
             }),
         ]).start();
     };
@@ -236,7 +257,7 @@ function AnimatedCard({ children, style, cardStyle }) {
                 style,
                 {
                     transform: [{ scale }],
-                    elevation: elevation,
+                    opacity: opacity,
                 },
             ]}
         >
@@ -245,29 +266,29 @@ function AnimatedCard({ children, style, cardStyle }) {
     );
 }
 
-function AnimatedMemberCard({ member, index, sectionAnim, isLast, onPress }) {
+function AnimatedMemberCard({ member, index, sectionAnim, isLast, onPress, styles }) {
     const cardScale = React.useRef(new Animated.Value(1)).current;
     const cardTranslateY = React.useRef(new Animated.Value(0)).current;
-    const cardElevation = React.useRef(new Animated.Value(0)).current;
+    const cardOpacity = React.useRef(new Animated.Value(1)).current;
 
     const handlePressIn = () => {
         Animated.parallel([
             Animated.spring(cardScale, {
-                toValue: 1.03,
+                toValue: 0.97,
                 tension: 300,
                 friction: 8,
                 useNativeDriver: true,
             }),
             Animated.spring(cardTranslateY, {
-                toValue: -4,
+                toValue: -2,
                 tension: 300,
                 friction: 8,
                 useNativeDriver: true,
             }),
-            Animated.timing(cardElevation, {
-                toValue: 6,
-                duration: 200,
-                useNativeDriver: false,
+            Animated.timing(cardOpacity, {
+                toValue: 0.85,
+                duration: 150,
+                useNativeDriver: true,
             }),
         ]).start();
     };
@@ -286,51 +307,58 @@ function AnimatedMemberCard({ member, index, sectionAnim, isLast, onPress }) {
                 friction: 8,
                 useNativeDriver: true,
             }),
-            Animated.timing(cardElevation, {
-                toValue: 0,
-                duration: 200,
-                useNativeDriver: false,
+            Animated.timing(cardOpacity, {
+                toValue: 1,
+                duration: 150,
+                useNativeDriver: true,
             }),
         ]).start();
     };
 
     return (
-        <AnimatedPressableBase
-            onPressIn={handlePressIn}
-            onPressOut={handlePressOut}
-            onPress={onPress}
-            style={[
-                styles.memberCard,
-                isLast && styles.lastMemberCard,
-                {
-                    opacity: sectionAnim,
-                    elevation: cardElevation,
-                    transform: [
-                        {
-                            translateX: sectionAnim.interpolate({
-                                inputRange: [0, 1],
-                                outputRange: [-20, 0],
-                            }),
-                        },
-                        { scale: cardScale },
-                        { translateY: cardTranslateY },
-                    ],
-                },
-            ]}
+        <Animated.View
+            style={{
+                opacity: sectionAnim,
+                transform: [
+                    {
+                        translateX: sectionAnim.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [-20, 0],
+                        }),
+                    },
+                ],
+            }}
         >
-            <Image source={member.photo} style={styles.memberPhoto} />
-            <View style={styles.memberDetails}>
-                <Text style={styles.memberName}>{member.name}</Text>
-                <Text style={styles.memberRm}>RM: {member.rm}</Text>
-                <LinkButton
-                    style={styles.linkButton}
-                    onPress={onPress}
-                >
-                    <Feather name="github" size={16} color={styles.linkColor} style={{ marginRight: 5 }} />
-                    <Text style={styles.linkText}>Perfil GitHub</Text>
-                </LinkButton>
-            </View>
-        </AnimatedPressableBase>
+            <AnimatedPressableBase
+                onPressIn={handlePressIn}
+                onPressOut={handlePressOut}
+                onPress={onPress}
+                style={[
+                    styles.memberCard,
+                    isLast && styles.lastMemberCard,
+                    {
+                        opacity: cardOpacity,
+                        transform: [
+                            { scale: cardScale },
+                            { translateY: cardTranslateY },
+                        ],
+                    },
+                ]}
+            >
+                <Image source={member.photo} style={styles.memberPhoto} />
+                <View style={styles.memberDetails}>
+                    <Text style={styles.memberName}>{member.name}</Text>
+                    <Text style={styles.memberRm}>RM: {member.rm}</Text>
+                    <LinkButton
+                        style={styles.linkButton}
+                        onPress={onPress}
+                    >
+                        <Feather name="github" size={16} color={styles.linkColor} style={{ marginRight: 5 }} />
+                        <Text style={styles.linkText}>Perfil GitHub</Text>
+                    </LinkButton>
+                </View>
+            </AnimatedPressableBase>
+        </Animated.View>
     );
 }
 
