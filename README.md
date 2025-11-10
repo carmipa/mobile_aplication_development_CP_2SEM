@@ -33,7 +33,7 @@ Este repositório centraliza os trabalhos desenvolvidos na disciplina **Mobile A
    - **Journey Tiago Lopes Ferreira** - RM556071 
    - **Paulo André Carminati** - RM557881
 
-**Repositório no GitHub:** [CP4 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
+**Repositório no GitHub:** [CP5 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
 
 ---
 
@@ -45,6 +45,6 @@ Este repositório centraliza os trabalhos desenvolvidos na disciplina **Mobile A
    - **Paulo André Carminati** - RM557881
    - **Gabrielly Macedo** - RM558962
 
-**Repositório no GitHub:** [CP4 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
+**Repositório no GitHub:** [CP6 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp6-TanQuery-final-semestre)
 
 
