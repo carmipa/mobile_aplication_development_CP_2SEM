@@ -18,6 +18,16 @@
 
 ---
 
+<p align="center">
+  <a href="https://youtu.be/OoijOwmn7mE" target="_blank">
+    <img src="https://img.youtube.com/vi/OoijOwmn7mE/hqdefault.jpg" alt="Assistir ao vídeo" width="480">
+    <br>
+    <strong>Clique aqui para assistir ao vídeo</strong>
+  </a>
+</p>
+
+---
+
 **Integrantes do CP:**
 - **Amanda Mesquita Cirino Da Silva** - RM559177
 - **Journey Tiago Lopes Ferreira** - RM556071
