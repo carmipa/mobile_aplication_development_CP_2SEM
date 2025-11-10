@@ -34,3 +34,17 @@ Este repositório centraliza os trabalhos desenvolvidos na disciplina **Mobile A
    - **Paulo André Carminati** - RM557881
 
 **Repositório no GitHub:** [CP4 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
+
+---
+
+## 🎯 CP6 2025 - 2º SEMESTRE - "TanQuery - com animaçoes e efeito de carregamento entre paginas" - 2TDSPZ
+
+**Integrantes do CP:**  
+   - **Amanda Mesquita Cirino Da Silva** - RM559177 
+   - **Journey Tiago Lopes Ferreira** - RM556071 
+   - **Paulo André Carminati** - RM557881
+   - **Gabrielly Macedo** - RM558962
+
+**Repositório no GitHub:** [CP4 Mobile](https://github.com/carmipa/mobile_aplication_development_CP_2SEM/tree/main/cp4-TanQuery)
+
+
